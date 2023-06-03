@@ -7,12 +7,39 @@
     background-color:  hsla(256, 72%, 46%, 1);
     border-radius:25px;
     color: white;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+}
+.result-circle{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    float: left;
+    background-color: #270477;
+    text-align: center;
+    margin-right: 5px;
 }
 .summary{
     height:500px;
     width:600px;
 }
 
+.stats{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+
+}
+img {
+    max-width: 100%
+  }
+  .image {
+    flex-basis: 40%
+  }
 .button{
     border-radius:50px
 }
