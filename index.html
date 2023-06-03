@@ -7,38 +7,54 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="columns is-desktop">
+    <div class="column">
+      <div class="card">
+        <div class="results">
+          Your Result
+          76
+          of 100
+        
+          Great
+          You scored higher than 65% of the people who have taken these tests.
+        </div>
+      </div>
+      <div class="card">
 
-  Your Result
-  76
-  of 100
+      <div class="summary">
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+        <h2>Summary</h2>
+    
+        <img src="./assets/images/icon-reaction.svg" alt="reaction"/> Reaction
+        80 / 100
+      
+        <img src="./assets/images/icon-memory.svg" alt="reaction"/> Memory
+        92 / 100
+      
+        <img src="./assets/images/icon-verbal.svg" alt="reaction"/> Memory
+        Verbal
+        61 / 100
+      
+        <img src="./assets/images/icon-reaction.svg" alt="reaction"/> Memory
+        Visual
+        72 / 100
+        <button class="button is-dark">Continue</button>
 
-  Reaction
-  80 / 100
+      </div>
+      </div>
 
-  Memory
-  92 / 100
 
-  Verbal
-  61 / 100
+    
+      
 
-  Visual
-  72 / 100
+    </div>
 
-  Continue
-  
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
