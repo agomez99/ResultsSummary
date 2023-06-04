@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+*{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 html{
@@ -13,10 +18,15 @@ html{
   }
   .title{
     color: white;
+    font-size: 1.2rem;
+  }
+  p.title{
+    margin-bottom: 2%;
+
   }
 .results{
-    height:500px;
-    width:350px;
+    height:400px;
+    width:300px;
     background-color:  hsla(256, 72%, 46%, 1);
     border-radius:25px;
     color: white;
@@ -24,11 +34,9 @@ html{
     justify-content:center;
     flex-direction: column;
     align-items: center;
-
-
-    background: rgb(2,0,36);
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-
+   position:relative;
+   z-index: 1;
 }
 .result-circle{
     border-radius: 50%;
@@ -37,22 +45,56 @@ html{
     background-color: #270477;
     text-align: center;
     margin-right: 5px;
+    margin-top: 10%;
+    display: column;
+    justify-content: center;
+    align-items: center;
     background:linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 }
-.title-2{
-    padding: 10% 10% 5%;
-}
-.summary{
-    height:500px;
-    width:350px;
-    border-radius: 0px 25px 25px 0px;
+.result-1{
+    font-size: 3rem;
+    margin-bottom: 0%;
+    margin-top: 1.5rem;
+    font-weight: bold;
 }
 
+.ratio{
+    color: hsl(241, 100%, 89%);
+
+}
+.content p:not(:last-child){
+    margin-bottom: 0px;
+}
+p.title-2{
+    font-size:1.2rem;
+    font-weight: bold;
+}
+.title-2{
+    padding: 10% 10% 0%;
+}
+.subtitle{
+    padding:10% 15% 10% 15%;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    font-size: 16px;
+
+}
+h1.sub-h1{
+    color:white;
+}
+.summary{
+    height:400px;
+    width:350px;
+    border-radius: 0px 25px 25px 0px;
+    margin-left: -1rem;
+    font-size: 1rem;
+
+}
 .stats{
     display: flex;
     justify-content:center;
     flex-direction: column;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
 
 }
 .icon{
@@ -63,6 +105,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 }
 .button{
     border-radius:50px;
@@ -71,21 +114,35 @@ html{
 
 
 }
+.button:hover{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border:none;
+
+}
 
 .content figure:not(:last-child) {
     margin-bottom: 0.3em;
     margin-top: 0.2em;
+    margin-left: 2rem;
+
 }
 .content figure:not(:first-child){
     margin-bottom: 0.3em;
     margin-top: 0.2em;
+    margin-left: 2rem;
+
+
+}
+
+.stat-title{
+    font-weight: bold;
 }
 .reaction-div{
     color: hsl(0, 100%, 67%);
     display: inline-flex;
-    background-color:hsl(0, 100%, 67%, 0.1);
+    background-color:hsl(0, 100%, 67%, 0.05);
     border-radius: 10px;
-    padding:15px;
+    padding:10px;
 
 }
 
@@ -93,27 +150,75 @@ html{
 .memory-div{
     color:hsl(39, 100%, 56%);
     display: inline-flex;
-    background-color: hsl(39, 100%, 56%, 0.1);
+    background-color: hsl(39, 100%, 56%, 0.05);
     border-radius: 10px;
-    padding:15px;
+    padding:10px;
 
 }
 .verbal-div{
     color:hsl(166, 100%, 37%);
     display: inline-flex;
-    background-color:hsl(166, 100%, 37%, 0.1) ;
+    background-color:hsl(166, 100%, 37%, 0.05) ;
     border-radius: 10px;
-    padding:15px;
+    padding:10px;
 }
 .visual-div{
     color: hsl(234, 85%, 45%);
     display: inline-flex;
-    background-color:hsl(234, 85%, 45%, 0.1) ;
+    background-color:hsl(234, 85%, 45%, 0.05) ;
     border-radius: 10px;
-    padding:15px;
+    padding:10px;
 }
 .stat-num{
     color:black;
     margin-left: auto; 
     margin-right: 0;
+    
 }
+.stat-num2{
+    color: hsl(241, 19%, 56%);
+
+}
+
+@media screen and (max-width:375px) {
+
+    .content {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+      }
+
+    .results{
+        height:450px;
+        width:90%;
+        border-radius:25px;
+        margin-top: 2em;
+        margin-left: 1.2em;
+        padding-top: 2em;
+       position:relative;
+       z-index: 1;
+    }
+
+    .summary{
+        height:450px;
+        width:400px;
+        border-radius: 0px 25px 25px 0px;
+        margin-top: -1em;
+        margin-left: 1em;
+        font-size: 1rem;
+
+    
+    }
+    .content p{
+        margin-bottom: 20%;
+    }
+    h1.sub-h1{
+        color:white;
+        margin-top: -1em;
+    }
+    .card p.title{
+        margin-top: -5em;
+        margin-bottom: -1em;
+    }
+}     
